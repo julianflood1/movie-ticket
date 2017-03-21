@@ -26,9 +26,17 @@ $(document).ready(function() {
     console.log(ticket);
 
 
+    var price = ticket.ticketPrice();
 
 
-  var price = ticket.ticketPrice();
+    $('#show-ticket').show();
+    $('#show-ticket h2').text("Your Ticket Price:");
+    $('.ticket-price').text(price + " dollars");
+
+    
+
+
+
   console.log(price);
   });
 });
